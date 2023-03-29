@@ -1,9 +1,6 @@
 name: Build
 
-on:
-  push:
-    paths:
-      - '**/build.yml'
+on: workflow_dispatch
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
