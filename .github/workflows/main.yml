@@ -44,11 +44,12 @@ jobs:
         with:
           targetPlatform: WebGL
 
-      - uses: actions/upload-artifact@v2
+      - name: Publish Build Artifact
+        uses: actions/upload-artifact@v2
         with:
-          public: true
-          name: Build
-          path: build
+          name: WebGL-build-artifact
+          path: build-WebGL
+
 
           
 
